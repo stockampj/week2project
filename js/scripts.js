@@ -22,6 +22,9 @@ $(document).ready(function() {
     // Motto question
     var q5val = $("#q5-ui").val();
 
+    $(".card").removeClass("show");
+
+
     if (q1val === "2") {
       ruby += 0;
       csharp += 0;
@@ -59,7 +62,7 @@ $(document).ready(function() {
     }
 
     if (q2val === "r") {
-      ruby += 2;
+      ruby += 1.99;
       csharp += 0;
       javascript += 0;
       rust += 0;
@@ -68,7 +71,7 @@ $(document).ready(function() {
       swift += 0;
     } else if (q2val === "p") {
       ruby += 0;
-      csharp += 2;
+      csharp += 1.99;
       javascript += 0;
       rust += 0;
       go += 0;
@@ -79,22 +82,22 @@ $(document).ready(function() {
       csharp += 0;
       javascript += 0;
       rust += 0;
-      go += 2;
-      python += 1;
+      go += 1.99;
+      python += .99;
       swift += 0;
     } else if (q2val === "y") {
       ruby += 0;
       csharp += 0;
-      javascript += 2;
+      javascript += 1.99;
       rust += 0;
       go += 0;
-      python += 1;
+      python += .99;
       swift += 0;
     } else if (q2val === "t") {
       ruby += 0;
       csharp += 0;
       javascript += 0;
-      rust += 2;
+      rust += 1.99;
       go += 0;
       python += 0;
       swift += 0;
@@ -105,24 +108,103 @@ $(document).ready(function() {
 
     if (q3val === "easy") {
       ruby += 0;
-      csharp += 1;
+      csharp += 1.01;
       javascript += 0;
-      rust += 2;
+      rust += 2.01;
       go += 0;
-      python += 1;
+      python += 1.01;
       swift += 0;
     } else if (q3val === "hard") {
-      ruby += 1;
+      ruby += 1.01;
       csharp += 0;
-      javascript += 2;
+      javascript += 2.01;
       rust += 0;
       go += 0;
       python += 0;
-      swift += 2;
+      swift += 2.01;
     } else {
 //    debug message
     }
 
+
+    if (q4val === "s") {
+      ruby += 0;
+      csharp += 2.02;
+      javascript += -1.02;
+      rust += 0;
+      go += 2.02;
+      python += 0;
+      swift += 0;
+    } else if (q4val === "m") {
+      ruby += 2.02;
+      csharp += 0;
+      javascript += 0;
+      rust += 2.02;
+      go += 0;
+      python += 2.02;
+      swift += 2.02;
+    } else if (q4val === "l") {
+      ruby += 0;
+      csharp += -.98;
+      javascript += 1.98;
+      rust += 0;
+      go += -.98;
+      python += 0;
+      swift += 0;
+    }else {
+    //    debug message
+    }
+
+    if (q5val === "m1") {
+      ruby += .5;
+      csharp += .5;
+      javascript += .2;
+      rust += .2;
+      go += 0;
+      python += 0;
+      swift += 0;
+    } else if (q5val === "m2") {
+      ruby += 0;
+      csharp += 0;
+      javascript += .2;
+      rust += .5;
+      go += .5;
+      python += .2;
+      swift += 0;
+    } else if (q5val === "m3") {
+      ruby += 0;
+      csharp += 0;
+      javascript += 0;
+      rust += .2;
+      go += .2;
+      python += .5;
+      swift += .5;
+    } else {
+    //    debug message
+    }
+
+    var languages = [ruby, csharp, javascript, rust, go, python, swift];
+    // console.log(languages)
+    languages.sort(function(a,b){return b-a});
+    // console.log(languages)
+    
+
+
+    // if (ruby >= (csharp && javascript && rust && go && python && swift)) {
+    //   $("#ruby").addClass("show");
+    // } else if (csharp >= (ruby && javascript && rust && go && python && swift)) {
+    //   $("#csharp").addClass("show");
+    // } else if (javascript >= (ruby && csharp && rust && go && python && swift)) {
+    //   $("#javascript").addClass("show");
+    // } else if (rust >= (ruby && csharp && javascript && go && python && swift)) {
+    //   $("#rust").addClass("show");
+    // } else if (go >= (ruby && csharp && javascript && rust && python && swift)) {
+    //   $("#go").addClass("show");
+    // } else if (python >= (ruby && csharp && javascript && rust && go && swift)) {
+    //   $("#python").addClass("show");
+    // } else if (swift >= (ruby && csharp && javascript && rust && go && python)) {
+    //   $("#swift").addClass("show");
+    // }
 
 
 
