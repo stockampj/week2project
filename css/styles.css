@@ -1,13 +1,34 @@
 body {
-  background-color: lightgreen;
+  background-color: #ffd7ba;
+}
+
+#top-row {
+  background-image: url(../img/header.jpg);
+  background-size: cover;
+  border: lightgray;
+  border-width: thick;
+  padding: 10px;
+}
+
+h1 {
+  color: lightgray;
+  text-align: center;
+  font-family: monospace;
+  font-weight: 400;
+  font-size: 70px
 }
 
 .card {
+  display: none;
   text-align: justify;
   margin: 10px;
 }
 
-
+.card img {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card a {
