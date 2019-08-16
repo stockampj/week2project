@@ -1,6 +1,6 @@
 body {
   background-image: url(../img/background.jpg);
-  background-size: cover;
+  background-position: left top;
   color: lightgray;
   text-align: justify;
   padding: 10px;
@@ -9,6 +9,7 @@ body {
 
 #top-row {
   background-image: url(../img/header.jpg);
+  background-position: left;
   background-size: cover;
   border: lightgray;
   border-width: thick;
@@ -75,4 +76,9 @@ h4 {
 
 .survey-q {
   margin-top: 20px;
+}
+
+option:first-child {
+  color: darkred;
+  font-weight: 500;
 }
