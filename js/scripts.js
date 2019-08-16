@@ -12,8 +12,9 @@ $(document).ready(function(event) {
     var q1val = $(#q1-ui).val();
     // Color question
     var q2val = $(#q2-ui).val();
-
+    // Shape question
     var q3val = $(#q3-ui).val();
+
     var q4val = $(#q4-ui).val();
     var q5val = $(#q5-ui).val();
 

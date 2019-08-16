@@ -33,14 +33,16 @@ h1 {
   display: block;
   text-align: justify;
   margin: 10px;
+  background-color: darkgray;
   color: black;
+  border: lightgray
 }
 
 .card img {
-  width: 200px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding: 20px;
 }
 
 .card a {
