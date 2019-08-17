@@ -1,5 +1,8 @@
 $(document).ready(function() {
   $("#submit").click(function(event) {
+
+    $(".card").removeClass("show");
+
     var ruby = 0;
     var csharp = 0;
     var javascript = 0;
@@ -8,22 +11,11 @@ $(document).ready(function() {
     var python = 0;
     var swift = 0;
 
-
-
-
-    // Animal question
     var q1val = $("#q1-ui").val();
-    // Color question
     var q2val = $("#q2-ui").val();
-    // Shape question
     var q3val = $("#q3-ui").val();
-    // Name length question
     var q4val = $("#q4-ui").val();
-    // Motto question
     var q5val = $("#q5-ui").val();
-
-    $(".card").removeClass("show");
-
 
     if (q1val === "2") {
       ruby += 0;
@@ -62,7 +54,7 @@ $(document).ready(function() {
     }
 
     if (q2val === "r") {
-      ruby += 1.99;
+      ruby += 2;
       csharp += 0;
       javascript += 0;
       rust += 0;
@@ -71,7 +63,7 @@ $(document).ready(function() {
       swift += 0;
     } else if (q2val === "p") {
       ruby += 0;
-      csharp += 1.99;
+      csharp += 2;
       javascript += 0;
       rust += 0;
       go += 0;
@@ -82,22 +74,22 @@ $(document).ready(function() {
       csharp += 0;
       javascript += 0;
       rust += 0;
-      go += 1.99;
-      python += .99;
+      go += 2;
+      python += 1;
       swift += 0;
     } else if (q2val === "y") {
       ruby += 0;
       csharp += 0;
-      javascript += 1.99;
+      javascript += 2;
       rust += 0;
       go += 0;
-      python += .99;
+      python += 1;
       swift += 0;
     } else if (q2val === "t") {
       ruby += 0;
       csharp += 0;
       javascript += 0;
-      rust += 1.99;
+      rust += 2;
       go += 0;
       python += 0;
       swift += 0;
@@ -105,23 +97,22 @@ $(document).ready(function() {
 //    debug message
     }
 
-
     if (q3val === "easy") {
       ruby += 0;
-      csharp += 1.01;
+      csharp += 1;
       javascript += 0;
-      rust += 2.01;
+      rust += 2;
       go += 0;
-      python += 1.01;
+      python += 1;
       swift += 0;
     } else if (q3val === "hard") {
-      ruby += 1.01;
+      ruby += 1;
       csharp += 0;
-      javascript += 2.01;
+      javascript += 2;
       rust += 0;
       go += 0;
       python += 0;
-      swift += 2.01;
+      swift += 2;
     } else {
 //    debug message
     }
@@ -129,26 +120,26 @@ $(document).ready(function() {
 
     if (q4val === "s") {
       ruby += 0;
-      csharp += 2.02;
-      javascript += -1.02;
+      csharp += 2;
+      javascript += -1;
       rust += 0;
-      go += 2.02;
+      go += 2;
       python += 0;
       swift += 0;
     } else if (q4val === "m") {
-      ruby += 2.02;
+      ruby += 2;
       csharp += 0;
       javascript += 0;
-      rust += 2.02;
+      rust += 2;
       go += 0;
-      python += 2.02;
-      swift += 2.02;
+      python += 2;
+      swift += 2;
     } else if (q4val === "l") {
       ruby += 0;
-      csharp += -.98;
-      javascript += 1.98;
+      csharp += -1;
+      javascript += 2;
       rust += 0;
-      go += -.98;
+      go += -1;
       python += 0;
       swift += 0;
     }else {
@@ -183,39 +174,44 @@ $(document).ready(function() {
     //    debug message
     }
 
+//  tie-breaker
+    ruby += (Math.random()) * .01;
+    csharp += (Math.random()) * .01;
+    javascript += (Math.random()) * .01;
+    rust += (Math.random()) * .01;
+    go += (Math.random()) * .01;
+    python += (Math.random()) * .01;
+    swift += (Math.random()) * .01;
+
     var languages = [ruby, csharp, javascript, rust, go, python, swift];
-    // console.log(languages)
     languages.sort(function(a,b){return b-a});
-    // console.log(languages)
-    
+
+    var first = languages [0];
+    var second = languages [1];
+    var third = languages [2];
 
 
-    // if (ruby >= (csharp && javascript && rust && go && python && swift)) {
-    //   $("#ruby").addClass("show");
-    // } else if (csharp >= (ruby && javascript && rust && go && python && swift)) {
-    //   $("#csharp").addClass("show");
-    // } else if (javascript >= (ruby && csharp && rust && go && python && swift)) {
-    //   $("#javascript").addClass("show");
-    // } else if (rust >= (ruby && csharp && javascript && go && python && swift)) {
-    //   $("#rust").addClass("show");
-    // } else if (go >= (ruby && csharp && javascript && rust && python && swift)) {
-    //   $("#go").addClass("show");
-    // } else if (python >= (ruby && csharp && javascript && rust && go && swift)) {
-    //   $("#python").addClass("show");
-    // } else if (swift >= (ruby && csharp && javascript && rust && go && python)) {
-    //   $("#swift").addClass("show");
-    // }
-
-
-
-    console.log(ruby)
-    console.log(csharp)
-    console.log(javascript)
-    console.log(rust)
-    console.log(go)
-    console.log(python)
-    console.log(swift)
-
+    if ((ruby === first ) || (ruby === second) || (ruby === third)) {
+      $("#ruby").addClass("show");
+    }
+    if ((csharp === first ) || (csharp === second) || (csharp === third)) {
+      $("#csharp").addClass("show");
+    }
+    if ((javascript === first ) || (javascript === second) || (javascript === third)) {
+      $("#javascript").addClass("show");
+    }
+    if ((go === first ) || (go === second) || (go === third)) {
+      $("#go").addClass("show");
+    }
+    if ((python === first ) || (python === second) || (python === third)) {
+      $("#python").addClass("show");
+    }
+    if ((rust === first ) || (rust === second) || (rust === third)) {
+      $("#rust").addClass("show");
+    }
+    if ((swift === first ) || (swift === second) || (swift === third)) {
+      $("#swift").addClass("show");
+    }
 
     event.preventDefault();
   });
