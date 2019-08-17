@@ -4,18 +4,17 @@ body {
   color: lightgray;
   text-align: justify;
   padding: 10px;
-
+  padding-left: calc(100vw - 100%);
 }
 
 #top-row {
   background-image: url(../img/header.jpg);
-  background-position: left;
-  background-size: cover;
+  background-position: -700px, 0px;
   border: lightgray;
   border-width: thick;
   padding: 10px;
   min-height: 100px;
-  margin-bottom: 10px
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -27,55 +26,66 @@ h1 {
   color: lightgray;
   text-align: center;
   font-family: monospace;
-  font-weight: 900;
   font-size: 60px
 }
 
 h4 {
   font-size: 20px;
   color: #9ed5ff;
+  display: block;
+  text-align: left;
 }
 
 .card {
   display: none;
-  text-align: justify;
-  margin: 10px;
-  background-color: darkgray;
-  color: black;
-  border: lightgray;
+  text-align: center;
+  margin: 1%;
+  background-color: rgb(165, 177, 184, 0.1);
+  color: lightgray;
+  border: white;
+  border-width: thick;
+  float: left;
+  width: 31%;
+  min-width: 100px
 }
 
 .card img {
   display: block;
+  padding: 20px;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
 }
 
 .card a {
   display: block;
-  width: 75%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .submit {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  float: left;
-  height: 40px;
-  width: 200px;
+  display: block;
+  margin: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  height: 50px;
   text-align: center;
-  background-color: lightgray
-  color: darkgray;
+  background-color: rgb(74, 74, 74, 0.2);
+  color: lightgray;
+  border-radius: 5px;
 }
 
 .form-control {
-  width: 200px;
+  display: block;
 }
 
 .survey-q {
-  margin-top: 20px;
+  display: block;
+  width: 96%;
+  margin: 2%;
+  float: left;
+
 }
 
 option {
@@ -91,4 +101,32 @@ option:first-child {
 
 .show {
   display: block;
+}
+
+#results-row {
+  display: none;
+}
+
+#survey-row {
+  display: none;
+}
+
+.results-col {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#reset {
+  display: block;
+  margin-left: 40%;
+  margin-right: auto;
+}
+
+#intro {
+  background-color: rgb(74, 74, 74, 0.3);
+  margin: -2%;
+  padding: 2%;
+  border: solid thin darkgray;
+  border-radius: 2px;
 }

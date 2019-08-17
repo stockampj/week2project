@@ -1,7 +1,13 @@
 $(document).ready(function() {
+
+  $("#survey-row").fadeIn(2000);
+
   $("#submit").click(function(event) {
 
     $(".card").removeClass("show");
+    $("#survey-row").slideUp(1000);
+    $("#results-row").show()
+
 
     var ruby = 0;
     var csharp = 0;
@@ -215,12 +221,12 @@ $(document).ready(function() {
 
     event.preventDefault();
   });
+
+  $("#reset").click(function(event) {
+
+    $("#survey-row").slideDown(1000);
+    $("#results-row").slideDown(1000).hide();
+
+    event.preventDefault();
+  });
 });
-
-
-
-
-// $("#q1r").text(weapon);
-// $("#q2r").text(terrain);
-// $("#q3r").text(style);
-// $("#concat").text(weapon+terrain+style);

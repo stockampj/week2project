@@ -15,73 +15,84 @@
 
     <div class="row" id="top-row">
       <div class="col-md-12">
-        <h1>What Language Fits You?</h1>
+        <h1>What Programming<br>Language Fits You?</h1>
       </div>
     </div>
     <div class="row" id="survey-row">
       <div class="col-md-12" id="survey-holder">
         <div class="row">
           <div class="container">
-            <p><em>Do you ever wonder what path you should take to find a job as a developer in the technology field? What language should you focus on? These questions can be overwhelming. </em></p>
-            <p>We've developed a "scientifically" proven method to determine where you should focus your energies. Instead of asking a square peg to fit in a round hole, we've centered the question around you. Which language best fits you?</p>
-            <p>Please take our quick survey and we'll help you find a match that is "guarenteed" to match your personality.</p>
-
-            <div class="survey-q" id="q1-content">
-              <h4>Do you like animals?</h4>
-              <div class="form-group">
-                <select class="form-control" id="q1-ui">
-                  <option value="">please choose one</option>
-                  <option value="1">Heck yeah!</option>
-                  <option value="-1">I've got an allergy...</option>
-                  <option value="2">omg, I NEED the cuddles all the time!</option>
-                  <option value="-2">Animals can go to #%*@!! (and I'm a terrible person)</option>
-                </select>
+            <br>
+            <p id="intro"><em>Do you ever wonder which path you should take to find a job as a developer in the technology field? What language should you focus on? Who will hire <strong>me?</strong> These questions can be overwhelming. </em></p>
+            <br>
+            <div id="mission">
+              <p>We've developed a "scientifically" proven method to determine where you should focus your energies. Instead of asking a square peg to fit in a round hole, we've centered the question around you. Which language best fits you?</p>
+              <p>Please take our quick survey and we'll help you find a programming language that is "guaranteed" to match your personality.</p>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="survey-q" id="q1-content">
+                  <h4>Do you like animals?</h4>
+                  <div class="form-group">
+                    <select class="form-control" id="q1-ui">
+                      <option value="">please choose one</option>
+                      <option value="1">Heck yeah!</option>
+                      <option value="-1">I've got an allergy...</option>
+                      <option value="2">omg, I NEED the cuddles all the time!</option>
+                      <option value="-2">Animals can go to #%*@!! (and I'm a terrible person)</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="survey-q" id="q2-content">
+                  <h4>What color do you prefer?</h4>
+                  <select class="form-control" id="q2-ui">
+                    <option value="">please choose one</option>
+                    <option value="r">Red</option>
+                    <option value="p">Purple</option>
+                    <option value="b">Blue</option>
+                    <option value="y">Yellow</option>
+                    <option value="t">I care more about textures...</option>
+                  </select>
+                </div>
+                <div class="survey-q" id="q3-content">
+                  <h4>How easily could I roll your preferred shape down a hill?</h4>
+                  <select class="form-control" id="q3-ui">
+                    <option value="">please choose one</option>
+                    <option value="hard">It would be hard</option>
+                    <option value="easy">It would be easy</option>
+                  </select>
+                </div>
               </div>
+              <div class="col-6">
+                <div class="survey-q" id="q4-content">
+                  <h4>Do you prefer short, medium or long names?</h4>
+                  <select class="form-control" id="q4-ui">
+                    <option value="">please choose one</option>
+                    <option value="s">Short: Abbreviations are even better</option>
+                    <option value="m">Medium: Enough letters to stand out</option>
+                    <option value="l">Long: Give me a mouthfull.</option>
+                  </select>
+                </div>
+                <div class="survey-q" id="q5-content">
+                  <h4>Choose a Motto</h4>
+                  <select class="form-control" id="q5-ui">
+                    <option value="">please choose one</option>
+                    <option value="m1">Do you even code-bruh?</option>
+                    <option value="m2">Sometimes you’re the windshield, sometimes you’re the bug!</option>
+                    <option value="m3">If you can’t convince them, confuse them…</option>
+                  </select>
+                </div>
+              </div>
+
+
             </div>
-            <div class="survey-q" id="q2-content">
-              <h4>What color do you prefer?</h4>
-              <select class="form-control" id="q2-ui">
-                <option value="">please choose one</option>
-                <option value="r">Red</option>
-                <option value="p">Purple</option>
-                <option value="b">Blue</option>
-                <option value="y">Yellow</option>
-                <option value="t">I care more about textures...</option>
-              </select>
-            </div>
-            <div class="survey-q" id="q3-content">
-              <h4>How easily could I roll your preferred shape down a hill?</h4>
-              <select class="form-control" id="q3-ui">
-                <option value="">please choose one</option>
-                <option value="hard">It would be hard</option>
-                <option value="easy">It would be easy</option>
-              </select>
-            </div>
-            <div class="survey-q" id="q4-content">
-              <h4>Do you prefer short, medium or long names?</h4>
-              <select class="form-control" id="q4-ui">
-                <option value="">please choose one</option>
-                <option value="s">Short: Abbreviations are even better</option>
-                <option value="m">Medium: Enough letters to stand out</option>
-                <option value="l">Long: Give me a mouthfull.</option>
-              </select>
-            </div>
-            <div class="survey-q" id="q5-content">
-              <h4>Choose a Motto</h4>
-              <select class="form-control" id="q5-ui">
-                <option value="">please choose one</option>
-                <option value="m1">Do you even code-bruh?</option>
-                <option value="m2">Sometimes you’re the windshield, sometimes you’re the bug!</option>
-                <option value="m3">If you can’t convince them, confuse them…</option>
-              </select>
-            </div>
+
+
+
 
             <div class="button">
               <button class="submit" type="button" name="button" id="submit"><strong>Submit</strong></button>
             </div>
-
-
-
 
           </div>
         </div>
@@ -89,70 +100,70 @@
     </div>
     <div class="row" id="results-row">
 
-      <div class="card" style="width: 18rem;" id="ruby">
-        <img class="card-img-top" src="img/ruby.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Ruby</h5>
-          <p class="card-text">Some quick examcple text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+
+      <div class="col-12 results-col">
+
+        <div class="card" id="ruby">
+          <img class="card-img-top" src="img/ruby.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Ruby</h5>
+            <a href="#" class="btn btn-primary">info</a>
+          </div>
+        </div>
+
+        <div class="card" id="csharp">
+          <img class="card-img-top" src="img/csh.svg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">C#</h5>
+            <a href="#" class="btn btn-primary">info</a>
+          </div>
+        </div>
+
+        <div class="card" id="javascript">
+          <img class="card-img-top" src="img/js.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">JavaScript</h5>
+            <a href="#" class="btn btn-primary">info</a>
+          </div>
+        </div>
+
+        <div class="card" id="go">
+          <img class="card-img-top" src="img/go.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Go</h5>
+            <a href="#" class="btn btn-primary">info</a>
+          </div>
+        </div>
+
+        <div class="card" id="python">
+          <img class="card-img-top" src="img/python.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Python</h5>
+            <a href="#" class="btn btn-primary">info</a>
+          </div>
+        </div>
+
+        <div class="card" id="rust">
+          <img class="card-img-top" src="img/rust.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Rust</h5>
+            <a href="#" class="btn btn-primary">info</a>
+          </div>
+        </div>
+
+        <div class="card" id="swift">
+          <img class="card-img-top" src="img/swift.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Swift</h5>
+            <a href="#" class="btn btn-primary">info</a>
+          </div>
         </div>
       </div>
 
-      <div class="card" style="width: 18rem;" id="csharp">
-        <img class="card-img-top" src="img/csh.svg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">C#</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+
+      <div class="button">
+        <button class="submit" type="button" name="button" id="reset"><strong>Reset</strong></button>
       </div>
-
-      <div class="card" style="width: 18rem;" id="javascript">
-        <img class="card-img-top" src="img/js.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">JavaScript</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;" id="go">
-        <img class="card-img-top" src="img/go.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Go</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;" id="python">
-        <img class="card-img-top" src="img/python.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Python</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;" id="rust">
-        <img class="card-img-top" src="img/rust.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Rust</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;" id="swift">
-        <img class="card-img-top" src="img/swift.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Swift</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-
-
 
 
     </div>
