@@ -66,7 +66,7 @@ $(document).ready(function() {
       rust += 0;
       go += 0;
       python += 0;
-      swift += 0;
+      swift += 2;
     } else if (q2val === "p") {
       ruby += 0;
       csharp += 2;

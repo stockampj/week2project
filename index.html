@@ -15,7 +15,9 @@
 
     <div class="row" id="top-row">
       <div class="col-md-12">
+        <div class="container">
         <h1>What Programming<br>Language Fits You?</h1>
+        </div>
       </div>
     </div>
     <div class="row" id="survey-row">
@@ -23,14 +25,14 @@
         <div class="row">
           <div class="container">
             <br>
-            <p id="intro"><em>Do you ever wonder which path you should take to find a job as a developer in the technology field? What language should you focus on? Who will hire <strong>me?</strong> These questions can be overwhelming. </em></p>
+            <p id="intro"><em>Do you ever wonder which path you should take to find a job as a developer in the technology field? What language should you focus on? Who will hire <strong>you?</strong> These questions can be overwhelming. </em></p>
             <br>
             <div id="mission">
               <p>We've developed a "scientifically" proven method to determine where you should focus your energies. Instead of asking a square peg to fit in a round hole, we've centered the question around you. Which language best fits you?</p>
               <p>Please take our quick survey and we'll help you find a programming language that is "guaranteed" to match your personality.</p>
             </div>
-            <div class="row">
-              <div class="col-6">
+            <div class="row" id="questions">
+              <div class="col-md-6">
                 <div class="survey-q" id="q1-content">
                   <h4>Do you like animals?</h4>
                   <div class="form-group">
@@ -63,7 +65,7 @@
                   </select>
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-md-6">
                 <div class="survey-q" id="q4-content">
                   <h4>Do you prefer short, medium or long names?</h4>
                   <select class="form-control" id="q4-ui">
@@ -82,16 +84,11 @@
                     <option value="m3">If you can’t convince them, confuse them…</option>
                   </select>
                 </div>
+                <div class="button">
+                  <button class="submit" type="button" name="button" id="submit"><strong>Submit</strong></button>
+                </div>
               </div>
-
-
-            </div>
-
-
-
-
-            <div class="button">
-              <button class="submit" type="button" name="button" id="submit"><strong>Submit</strong></button>
+              <br><br>
             </div>
 
           </div>
@@ -99,15 +96,14 @@
       </div>
     </div>
     <div class="row" id="results-row">
-
-
+      <h2>Try one of these:</h2>
       <div class="col-12 results-col">
 
         <div class="card" id="ruby">
           <img class="card-img-top" src="img/ruby.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Ruby</h5>
-            <a href="#" class="btn btn-primary">info</a>
+            <a href="https://www.ruby-lang.org/en/" class="btn btn-primary" target="_blank">info</a>
           </div>
         </div>
 
@@ -115,7 +111,7 @@
           <img class="card-img-top" src="img/csh.svg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">C#</h5>
-            <a href="#" class="btn btn-primary">info</a>
+            <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/" class="btn btn-primary target="_blank"">info</a>
           </div>
         </div>
 
@@ -123,7 +119,7 @@
           <img class="card-img-top" src="img/js.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">JavaScript</h5>
-            <a href="#" class="btn btn-primary">info</a>
+            <a href="https://www.javascript.com/" class="btn btn-primary" target="_blank">info</a>
           </div>
         </div>
 
@@ -131,7 +127,7 @@
           <img class="card-img-top" src="img/go.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Go</h5>
-            <a href="#" class="btn btn-primary">info</a>
+            <a href="https://golang.org/" class="btn btn-primary" target="_blank">info</a>
           </div>
         </div>
 
@@ -139,15 +135,15 @@
           <img class="card-img-top" src="img/python.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Python</h5>
-            <a href="#" class="btn btn-primary">info</a>
+            <a href="https://www.learnpython.org/" class="btn btn-primary" target="_blank">info</a>
           </div>
         </div>
 
         <div class="card" id="rust">
-          <img class="card-img-top" src="img/rust.png" alt="Card image cap">
+          <img class="card-img-top" src="img/rusty.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Rust</h5>
-            <a href="#" class="btn btn-primary">info</a>
+            <a href="https://www.rust-lang.org/" class="btn btn-primary" target="_blank" >info</a>
           </div>
         </div>
 
@@ -155,16 +151,14 @@
           <img class="card-img-top" src="img/swift.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Swift</h5>
-            <a href="#" class="btn btn-primary">info</a>
+            <a href="https://swift.org/" class="btn btn-primary" target="_blank">info</a>
           </div>
         </div>
       </div>
 
-
       <div class="button">
         <button class="submit" type="button" name="button" id="reset"><strong>Reset</strong></button>
       </div>
-
 
     </div>
 
