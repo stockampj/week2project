@@ -1,7 +1,6 @@
 body {
-  background-image: url(../img/background.png);
-  background-position: left top;
-  background-size: 2000px 1125px;
+  background-image: url(../img/hex-background.png);
+  background-size: 2000px;
   color: lightgray;
   text-align: justify;
   padding: 20px;
@@ -10,7 +9,9 @@ body {
 
 #top-row {
   background: rgb(15,27,70);
-  background: linear-gradient(90deg, rgba(15,27,70,0) 0%, rgba(167,167,167,0.3) 19%, rgba(241,240,240,0.39959161931818177) 48%, rgba(167,167,167,0.3) 77%, rgba(17,29,73,0) 100%);
+  background: rgb(221,221,221);
+  background: rgb(221,221,221);
+  background: linear-gradient(90deg, rgba(221,221,221,0.11485576923076923) 0%, rgba(255,255,255,0.4963942307692307) 54%, rgba(221,221,221,0.11485576923076923) 100%);
   border: solid thin #0c111f;
   padding: -20px;
   height: 150px;
@@ -25,6 +26,7 @@ h1 {
   text-align: center;
   font-family: monospace;
   font-size: 40px;
+  font-weight: 800;
   text-align: center;
 }
 
@@ -49,10 +51,9 @@ h4 {
   display: none;
   text-align: center;
   margin: 1%;
-  background-color: rgb(165, 177, 184, 0.1);
+  background-color: rgb(31, 33, 46, 0.6);
   color: lightgray;
-  border: white;
-  border-width: thick;
+  border: solid thin lightgray;
   float: left;
   width: 31%;
   min-width: 100px
@@ -124,6 +125,17 @@ option:first-child {
   font-weight: 500;
 }
 
+#disclaimer {
+  display: none;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 40px;
+  font-weight: 600;
+  color: #ab6c78;
+  font-family: monospace;
+  text-align: center;
+}
+
 .show {
   display: block;
 }
@@ -139,8 +151,9 @@ option:first-child {
 #questions {
   margin: 0%;
   padding: 2%;
-  border: solid thin lightgray;
-  background-color: rgb(31, 33, 46, 0.5);
+  border: solid thin darkgray;
+  radius: 5px;
+  background-color: rgb(31, 33, 46, 0.6);
 }
 
 .results-col {
@@ -156,10 +169,10 @@ option:first-child {
 }
 
 #intro {
-  background-color: rgb(31, 33, 46, 0.5);
+  background-color: rgb(31, 33, 46, 0.6);
   margin: 0%;
-  padding: 2%;
-  border: solid thin lightgray;
+  padding: 1%;
+  border: solid thin darkgray;
   border-radius: 2px;
 }
 
@@ -170,6 +183,12 @@ option:first-child {
 
 .btn-primary {
   background-color: rgb(55, 84, 120, .5);
-  border-color: lightgray;
+  border-color: darkgray;
   cursor: pointer;
+}
+
+#results-header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
