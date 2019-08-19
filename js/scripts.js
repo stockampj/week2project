@@ -45,21 +45,21 @@ $(document).ready(function() {
       python += 1;
       swift += 1;
     } else if (q1val === "-1") {
-      ruby += 0;
-      csharp += 0;
-      javascript += 0;
-      rust += 0;
+      ruby += .1;
+      csharp += .1;
+      javascript += .1;
+      rust += .1;
       go += -1;
       python += -1;
       swift += -1;
     } else if (q1val === "-2") {
-      ruby += 0;
-      csharp += 0;
-      javascript += 0;
-      rust += 0;
-      go += -2;
-      python += -2;
-      swift += -2;
+      ruby += .1;
+      csharp += .1;
+      javascript += .1;
+      rust += .1;
+      go += -5;
+      python += -5;
+      swift += -5;
     } else {
 //    debug message
     }
@@ -228,10 +228,11 @@ $(document).ready(function() {
   });
 
   $("#reset").click(function(event) {
-
     $("#survey-row").slideDown(1000);
     $("#results-row").slideDown(1000).hide();
 
     event.preventDefault();
   });
+
+
 });
